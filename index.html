@@ -27,8 +27,9 @@
                 <h2><i class="fas fa-graduation-cap"></i> SIGA</h2>
             </div>
             <nav class="menu-navegacao">
-                <a href="#" class="link-navegacao ativo"><i class="fas fa-home"></i> Início</a>
+                <a href="#" id="botao-inicio" class="link-navegacao ativo" onclick="mostrarInicio()"><i class="fas fa-home"></i> Início</a>
                 <a href="#" class="link-navegacao"><i class="fas fa-book"></i> Meu Curso</a>
+                <a href="#" id="botao-faq" class="link-navegacao" onclick="mostrarFaq()"><i class="fas fa-question-circle"></i> FAQ</a>
             </nav>
             <div class="cabecalho-usuario">
                 <button id="alternador-tema" class="botao-icone">
@@ -40,7 +41,7 @@
         </header>
 
         <div class="conteiner">
-            <div class="conteudo-principal">
+            <div class="conteudo-principal" id="conteudo-inicio">
                 <div class="informacoes-aluno">
                     <h3>LUIGI GABRIEL ALVES DE PAULA</h3>
                     <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
@@ -51,23 +52,41 @@
                 <div class="grade-servicos">
                     <div class="cartao-servico cartao-mfa">
                         <i class="fas fa-mobile-alt"></i>
-                        <h4>MFA</h4>
-                        <p>Autenticação</p>
+                        <h4>Autenticação</h4>
+                        <p>MFA</p>
                     </div>
                     <div class="cartao-servico cartao-pessoal">
                         <i class="fas fa-user-edit"></i>
-                        <h4>PESSOAL</h4>
-                        <p>Dados Cadastrais</p>
+                        <h4>Dados Cadastrais</h4>
+                        <p>Pessoal</p>
                     </div>
                     <div class="cartao-servico cartao-cpf">
                         <i class="fas fa-id-card"></i>
-                        <h4>CPF</h4>
-                        <p>Documentação</p>
+                        <h4>Documentação</h4>
+                        <p>CPF</p>
                     </div>
                     <div class="cartao-servico cartao-foto">
                         <i class="fas fa-camera"></i>
-                        <h4>FOTO</h4>
-                        <p>Crachá/Perfil</p>
+                        <h4>Crachá/Perfil</h4>
+                        <p>Foto</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conteudo-principal" id="conteudo-faq" style="display: none;">
+                <div class="secao-faq">
+                    <h3>Perguntas Frequentes (FAQ)</h3>
+                    <div class="item-faq">
+                        <div class="pergunta-faq">Como faço para solicitar uma declaração de matrícula?</div>
+                        <div class="resposta-faq">Você pode emitir o documento digital diretamente através da aba de documentos na opção do menu "Meu Curso".</div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="pergunta-faq">Como funciona o limite de faltas no semestre?</div>
+                        <div class="resposta-faq">O limite permitido por lei e regulamento interno é de até 25% de ausências sobre a carga horária total dada em cada disciplina.</div>
+                    </div>
+                    <div class="item-faq">
+                        <div class="pergunta-faq">Como redefinir minha senha institucional de aluno?</div>
+                        <div class="resposta-faq">Acesse a tela inicial e utilize a opção de recuperação de credenciais da própria interface da Microsoft ou contate o suporte de TI da sua Fatec.</div>
                     </div>
                 </div>
             </div>
@@ -98,6 +117,14 @@
             </aside>
         </div>
     </div>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 
     <script src="script.js"></script>
 </body>
