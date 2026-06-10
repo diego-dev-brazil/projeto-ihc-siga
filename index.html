@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo SIGA - Protótipo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="tela-login">
+        <div class="cartao-login">
+            <h1>Siga CPS</h1>
+            <p>Portal do Aluno - FATEC</p>
+            <p class="instrucao-login">
+                Ingressar no sistema utilizando sua credencial de aluno (@fatec)
+            </p>
+            <button class="botao-microsoft" onclick="entrarSistema()">
+                <i class="fab fa-windows"></i> Entrar com Microsoft
+            </button>
+        </div>
+    </div>
+
+    <div id="tela-painel">
+        <header>
+            <div class="logo-siga">
+                <h2><i class="fas fa-graduation-cap"></i> SIGA</h2>
+            </div>
+            <nav class="menu-navegacao">
+                <a href="#" class="link-navegacao ativo"><i class="fas fa-home"></i> Início</a>
+                <a href="#" class="link-navegacao"><i class="fas fa-book"></i> Meu Curso</a>
+            </nav>
+            <div class="cabecalho-usuario">
+                <button id="alternador-tema" class="botao-icone">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <span>Olá, LUIGI</span>
+                <button class="botao-sair" onclick="sairSistema()"><i class="fas fa-sign-out-alt"></i> Sair</button>
+            </div>
+        </header>
+
+        <div class="conteiner">
+            <div class="conteudo-principal">
+                <div class="informacoes-aluno">
+                    <h3>LUIGI GABRIEL ALVES DE PAULA</h3>
+                    <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+                    <p><strong>E-mail institucional:</strong> luigi.paula@fatec.sp.gov.br</p>
+                </div>
+
+                <h3 class="titulo-servicos">Serviços</h3>
+                <div class="grade-servicos">
+                    <div class="cartao-servico cartao-mfa">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>MFA</h4>
+                        <p>Autenticação</p>
+                    </div>
+                    <div class="cartao-servico cartao-pessoal">
+                        <i class="fas fa-user-edit"></i>
+                        <h4>PESSOAL</h4>
+                        <p>Dados Cadastrais</p>
+                    </div>
+                    <div class="cartao-servico cartao-cpf">
+                        <i class="fas fa-id-card"></i>
+                        <h4>CPF</h4>
+                        <p>Documentação</p>
+                    </div>
+                    <div class="cartao-servico cartao-foto">
+                        <i class="fas fa-camera"></i>
+                        <h4>FOTO</h4>
+                        <p>Crachá/Perfil</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="painel-eventos">
+                <div class="topo-eventos">
+                    <h3><i class="far fa-calendar-alt"></i> Grade</h3>
+                    <button class="botao-notificacao"><i class="far fa-bell"></i> Notificar</button>
+                </div>
+                
+                <div class="item-evento">
+                    <div class="data-evento">EM BREVE</div>
+                    <div class="titulo-evento">Visita Técnica: Oracle Brasil</div>
+                    <div class="descricao-evento">Visita presencial para alunos de TI. Confirme sua presença no painel.</div>
+                </div>
+
+                <div class="item-evento">
+                    <div class="data-evento">21/05/2026</div>
+                    <div class="titulo-evento">Evento: Data Deep Dive</div>
+                    <div class="descricao-evento">Neo Química Arena - Ciclo de palestras extracurriculares.</div>
+                </div>
+
+                <div class="item-evento">
+                    <div class="data-evento">FECHAMENTO DE SEMESTRE</div>
+                    <div class="titulo-evento">Entrega de Projetos</div>
+                    <div class="descricao-evento">Prazo final para envio do sistema em PHP/MVC no repositório institucional.</div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
